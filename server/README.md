@@ -31,6 +31,6 @@ Make sure that file  /etc/avahi/services/ssh.service containing the following li
 
 http://stackoverflow.com/questions/32361132/screen-sharing-between-raspberry-pi-and-mac-osx
 
-## sudo apt-get install libmysqlclient-dev ruby-dev ruby2.3-dev build-essential gcc libxml2 libxml2-dev libxslt1-dev
+## sudo apt-get install libmysqlclient-dev ruby-dev ruby2.3-dev ruby-bundler nodejs build-essential gcc libxml2 libxml2-dev libxslt1-dev htop chromium-browser
 
 ## sudo gem install dashing
