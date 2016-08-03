@@ -43,9 +43,19 @@ Make sure that file  /etc/avahi/services/ssh.service containing the following li
 http://stackoverflow.com/questions/32361132/screen-sharing-between-raspberry-pi-and-mac-osx
 
 # For chromium https://launchpad.net/~canonical-chromium-builds/+archive/ubuntu/stage
+
+# SHOWSTOPPER! https://bugs.chromium.org/p/chromium/issues/detail?id=525751
+# chromium will not work with latest version. x86 / 64 bit thingy!?
+# nighty-night  //O
+
 ```bash
+# THIS IS THE ONLY WAY TO GET CHROMIUM ON JESSIE!
+# THIS WILL ONLY WORK ON A Pi2!
+# You may be able to use the older one in the Wheezy repo, but that's v22
+
+
 sudo chmod 777 /etc/apt/sources.list.d/.
-sudo echo "deb http://ppa.launchpad.net/canonical-chromium-builds/stage/ubuntu vivid main" > /etc/apt/sources.list.d/chromium-ppa.list
+sudo echo "deb http://ppa.launchpad.net/canonical-chromium-builds/stage/ubuntu wheezy main" > /etc/apt/sources.list.d/chromium-ppa.list
 sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys DB69B232436DAC4B50BDC59E4E1B983C5B393194
 ```
 
